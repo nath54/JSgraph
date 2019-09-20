@@ -19,26 +19,29 @@ function ff(x){
 	return x*2;
 }
 
+vit=100
+
 valeurs=[];
 
 function aff(){
 	context.fillStyle="rgb(250,250,250)";
+	context.strokeStyle="rgb(0,0,0)";
 	context.fillRect(0,0,tex,tey);
-	context.beginPath();
+	context.beginPath("2d");
 	context.moveTo(cam[0]+0,cam[1]+vmin);
 	context.lineTo(cam[0]+0,cam[1]+vmax);
 	context.stroke();
 	context.closePath();
-	context.beginPath();
+	context.beginPath("2d");
 	context.moveTo(cam[0]+vmin,cam[1]+0);
 	context.lineTo(cam[0]+vmax,cam[1]+0);
 	context.stroke();
 	context.closePath();
 	context.strokeStyle=color;
-	context.beginPath();
+	context.beginPath("2d");
 	context.moveTo( cam[0]+vmin , cam[1]+valeurs[0] );
 	xx=vmin+p;
-	for( v in valeurs ){
+	for( v of valeurs ){
 	    context.lineTo( cam[0]+xx , cam[1]+v );
 	    xx+=p;
 	}
