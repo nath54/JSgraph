@@ -1,0 +1,17 @@
+body{
+    background-color:rgb(70,70,70);
+    color:rgb(150,150,150);
+    text-align:center;
+    font-style:Comic;
+    font-size:30px;
+}
+
+h3{
+    
+}
+
+canvas{
+    border:2px solid black;
+    width:80%;
+    marging:4px;
+}

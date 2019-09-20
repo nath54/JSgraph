@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>JSgraph</title>
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+    	<h1>JSgraph</h1>
+        <div>
+            <canvas id="canvas" width="200" height="200">Votre navigateur ne supporte pas les canvas</canvas>
+        </div>
+        <div>
+            <button onClick="move("left");" >gauche</button>
+            <button onClick="move("right");" >droite</button>
+            <button onClick="move("up");" >haut</button>
+            <button onClick="move("down");" >bas</button>
+            <h3>Précision</h3>
+            <input value="0.1" id="precision"></input>
+            <button onClick="calc();">Apply</button>
+            <h3>Minimal value</h3>
+            <input value="-100" id="min"></input>
+            <button onClick="calc();">Apply</button>
+            <h3>Maximal value</h3>
+            <input value="100" id="max" ></input>
+            <button onClick="calc();">Apply</button>
+            <h3>Function</h3>
+            <input value="f(x)=x**x" id="fonction"/></input>
+            <button onClick="calc();">Apply</button>
+            <h3>Color</h3>
+            <input value="blue" id="color"></input>
+            <button onClick="calc();">Apply</button>
+            
+        </div>
+        <script src="main.js" type="text/javascript"></script>
+        
+    </body>
+</htlm>
