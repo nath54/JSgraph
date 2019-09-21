@@ -16,7 +16,7 @@ vmax=parseInt(vmax);
 p=parseFloat(p);
 
 function ff(x){
-	return x*2;
+	return eval(f);
 }
 
 vit=100
@@ -71,4 +71,18 @@ function move(direction){
 }
 
 aff();
+
+function appli(){
+    f=document.getElementById("fonction").value;
+    p=document.getElementById("precision").value;
+    vmin=document.getElementById("min").value;
+    vmax=document.getElementById("max").value;
+    color=document.getElementById("color").value;
+    vmin=parseInt(vmin);
+    vmax=parseInt(vmax);
+    p=parseFloat(p);
+    valeurs=calc();
+    aff();
+}
+
 
